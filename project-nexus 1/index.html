@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box">
+                <div class="form-toggle">
+                    <button id="login-btn" class="toggle-btn active">Login</button>
+                    <button id="signup-btn" class="toggle-btn">Signup</button>
+                </div>
+                <form id="login-form" class="form active">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" required>
+                        <small class="error-message" id="login-email-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" required>
+                        <small class="error-message" id="login-password-error"></small>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <form id="signup-form" class="form">
+                    <h2>Signup</h2>
+                    <div class="input-group">
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" required>
+                        <small class="error-message" id="signup-email-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" required>
+                        <small class="error-message" id="signup-password-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" required>
+                        <small class="error-message" id="signup-confirm-password-error"></small>
+                    </div>
+                    <button type="submit" class="submit-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
